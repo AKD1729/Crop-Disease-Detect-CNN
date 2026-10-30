@@ -1,0 +1,8 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description_fill_in
+image_id,object/numeric,IMG00001,IMG00002,IMG00003,No,image_id — [Learner to fill in description]
+crop_type,object/numeric,Potato,Tomato,Pepper,No,crop_type — [Learner to fill in description]
+disease_label,object/numeric,Early_Blight,Leaf_Scorch,Healthy,No,disease_label — [Learner to fill in description]
+confidence_score,object/numeric,0.998,0.852,0.728,No,confidence_score — [Learner to fill in description]
+severity,object/numeric,Severe,None,None,No,severity — [Learner to fill in description]
+leaf_area_cm2,object/numeric,27.1,11.0,53.3,No,leaf_area_cm2 — [Learner to fill in description]
+batch_id,object/numeric,BATCH007,BATCH013,BATCH019,No,batch_id — [Learner to fill in description]
