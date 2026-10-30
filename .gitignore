@@ -1,8 +1,13 @@
 # ===== Datasets (too large for GitHub) =====
 Data/
 
-# ===== Model weights (use GitHub Releases or Git LFS) =====
+# ===== Model weights (allow lightweight deployment checkpoint) =====
 *.pth
+!Project/crop_disease_scratch_cnn.pth
+
+# ===== Media & Video Binaries =====
+*.webm
+*.mp4
 
 # ===== Python =====
 __pycache__/
@@ -28,11 +33,5 @@ Desktop.ini
 .vscode/
 .idea/
 
-# ===== Root-level duplicate test images (kept in sample/ instead) =====
-/Corn_*.jpg
-/Rice_*.jpg
-/images.jfif
-/PhotoshopExtension_Image.png
-
-# ===== PDFs (binary, optional — remove this line if you want them tracked) =====
+# ===== PDFs (binary) =====
 *.pdf

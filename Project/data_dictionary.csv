@@ -1,0 +1,8 @@
+column_name,data_type,example_value,nullable,description
+image_id,string,IMG00001,No,Unique identifier assigned to each image in the combined corn+rice dataset during preprocessing.
+filename,string,RS_BrownSpot_0231.jpg,No,Original image filename as provided by the source dataset.
+crop_type,categorical,Corn,No,"Crop the image belongs to. One of: Corn, Rice."
+disease_label,categorical,Corn_Common_Rust,No,"Target class label used for model training. One of 10 classes: 4 corn (Cercospora_Gray_Leaf_Spot, Common_Rust, Northern_Leaf_Blight, Healthy) and 6 rice (Bacterial_Leaf_Blight, Brown_Spot, Leaf_Blast, Leaf_Scald, Sheath_Blight, Healthy)."
+source_dataset,categorical,PlantVillage,No,"Originating dataset the image was sourced from. One of: PlantVillage (raw, GitHub: spMohanty/PlantVillage-Dataset) for corn, Kaggle-AgML-RiceDisease for rice."
+split,categorical,train,No,"Dataset partition the image was assigned to after stratified splitting. One of: train, val, test (70/15/15 split, performed before augmentation)."
+group_id,integer,1042,Yes,"Near-duplicate group identifier used during deduplication/split-leakage checks (Module 3). Images sharing a group_id originate from the same source leaf/photo sequence and were kept within a single split to prevent leakage."
